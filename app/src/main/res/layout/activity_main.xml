@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <Switch
+            android:id="@+id/BluetoothSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="블루투스 On/Off"
+            android:textOn="블루투스 ON"
+            android:textOff="블루투스 OFF"
+            android:switchPadding="20dp"/>
+        <TextView
+            android:id="@+id/tvBluetoothStatus"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:text="status"
+            tools:layout_editor_absoluteX="191dp"
+            tools:layout_editor_absoluteY="672dp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/btnBluetoothOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="블루투스 ON"/>
+
+            <Button
+                android:id="@+id/btnBluetoothOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="블루투스 OFF"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/findDevice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="장치 검색"/>
+
+            <Button
+                android:id="@+id/btnConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="연결하기"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/tvSendData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Send Data"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="389dp" />
+            <Button
+                android:id="@+id/btnSendData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="전송"
+                tools:layout_editor_absoluteX="273dp"
+                tools:layout_editor_absoluteY="386dp" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/tvReceiveData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receive"
+            tools:layout_editor_absoluteX="271dp"
+            tools:layout_editor_absoluteY="434dp" />
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
